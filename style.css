@@ -10,3 +10,52 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+ul li a {
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  max-width: 992px;
+  margin: auto;
+  width: 100%;
+}
+
+header {
+  background-color: lightgreen;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+header .list-items {
+  display: flex;
+  width: 100%;
+  max-width: 260px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu {
+  justify-content: space-between;
+  color: rgb(47, 79, 47);
+}
+
+.list-items li a {
+  color: rgb(47, 79, 47);
+}
+
+.presentation {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation .presentation-text {
+  min-height: 200px;
+}
+
+.presentation .presentation-text h1 {
+  color: rgb(47, 79, 47);
+}
