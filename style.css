@@ -25,6 +25,7 @@ div img {
   max-width: 992px;
   margin: auto;
   width: 100%;
+  min-width: 320px;
 }
 
 header {
@@ -52,7 +53,6 @@ header .menu {
 }
 
 .presentation {
-  height: 100vh;
   align-items: center;
   justify-content: space-between;
 }
@@ -176,7 +176,7 @@ header .menu {
 
 #planos {
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 50vh;
   padding-top: 50px;
 }
 
@@ -195,6 +195,7 @@ header .menu {
   border: 5px solid rgb(47, 79, 47);
   margin-right: 20px;
   max-width: 240px;
+  padding: 10px;
 }
 
 .item-plano .btn {
@@ -254,3 +255,52 @@ footer .footer {
 
 /* ======= MOBILE ====== */
 
+@media (max-width: 992px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .presentation {
+    flex-direction: column-reverse;
+  }
+  .presentation .presentation-text {
+    width: 100%;
+  }
+
+  #quem-somos {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+  #quem-somos img {
+    min-width: 320px;
+    margin: auto;
+  }
+
+  .list-services {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .item-servico img {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .list-planos {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .list-planos .item-plano {
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #planos h2 {
+    margin-bottom: 30px;
+  }
+}
