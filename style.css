@@ -239,3 +239,18 @@ header .menu {
   background-color: rgb(47, 79, 47);
   margin-right: 5px;
 }
+
+footer {
+  background-color: rgb(47, 79, 47);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer {
+  justify-content: space-between;
+  color: lightgreen;
+}
+
+/* ======= MOBILE ====== */
+
